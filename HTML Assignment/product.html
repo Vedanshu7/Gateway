@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Product</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .cont {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 300px;
+            width: 300px;
+            border-radius: 60px;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #06b9d1;
+        }
+
+        .cont:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+        <div class="logo">
+            <a href="#">Lorem<em>Ipsum</em></a>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto" style="font-weight: bold;">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./service.html">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-heading" style="background-image: url('./img/product.jpg');">
+        <div class="container">
+            <div class="heading-content">
+                <h1>Product</h1>
+            </div>
+        </div>
+    </div>
+    <section id="service" style="height: auto;background-color: white;">
+
+        <div class="row">
+            <div class="col-4">
+                <div class="cont">
+                    <img style="height: 300px; width: 300px;border-radius: 60px; object-fit: cover;"
+                        src="./img/product1.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <div class="text">Product 1</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="cont">
+                    <img style="height: 300px; width: 300px;border-radius: 60px;object-fit: cover;" class="image"
+                        src="./img/product4.jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Product 2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="cont">
+                    <img style="height: 300px; width: 300px;border-radius: 60px;object-fit: cover;" class="image"
+                        src="./img/product3.jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Product 3</div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </br>
+</br>
+        <div class="row">
+            <div class="col-4">
+                <div class="cont">
+                    <img style="height: 300px; width: 300px;border-radius: 60px; object-fit: cover;"
+                        src="./img/product1.jpg" class="image" alt="">
+                    <div class="overlay">
+                        <div class="text">Product 4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="cont">
+                    <img style="height: 300px; width: 300px;border-radius: 60px;object-fit: cover;" class="image"
+                        src="./img/product4.jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Product 5</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="cont">
+                    <img style="height: 300px; width: 300px;border-radius: 60px;object-fit: cover;" class="image"
+                        src="./img/product3.jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Product 6</div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <p>Footer Address</p>
+                </div>
+                <div class="col-6">
+                    <p>Footer Links</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p>Copyright &copy; 2020 Lorem Ipsum | Designed by Vedanshu</p>
+                </div>
+                <div class="col-6">
+                    <p>Privacy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
