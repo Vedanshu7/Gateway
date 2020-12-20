@@ -1,0 +1,49 @@
+﻿@model Assignment1.Models.dict
+@{
+    ViewBag.Title = "Log";
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+}<nav class="rightbar">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title text-center">Log Table</h4>
+           
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>DateTime</th>
+                            <th>Level</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var dict in Model.Logs)
+                        {
+                        <tr>
+
+
+                            <td>@Model.Logs[dict.Key]["Id"]</td>
+                            <td>@Model.Logs[dict.Key]["DateTime"]</td>
+                            @if (@Model.Logs[dict.Key]["Level"] == "Error")
+                            {
+                                <td class="text-danger"> @Model.Logs[dict.Key]["Level"] </td>
+                                <td><label class="badge badge-danger">@Model.Logs[dict.Key]["Message"]</label></td>
+                            }
+                            else
+                            {
+                                <td class="text-success"> @Model.Logs[dict.Key]["Level"] </td>
+                                <td><label class="badge badge-success">@Model.Logs[dict.Key]["Message"]</label></td>
+                            }
+
+
+
+                        </tr>
+                        }
+                           
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</nav>

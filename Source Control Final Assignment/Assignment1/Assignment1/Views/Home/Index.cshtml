@@ -1,0 +1,90 @@
+﻿@model Assignment1.Models.dict
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+}
+
+<nav class="rightbar">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title text-center"><img src="@Url.Content(Model.Users["ImagePath"])" class="align-content-center" alt="" style="height:150px;width:150px;border-radius:80px" /></h4>
+            @if (Model.Users["Active"] == "inactive")
+            {
+                <p class="card-description text-danger text-center"> Go to your mail and Active your profile </p>
+            }
+            <form class="forms-sample">
+                <div class="form-group row">
+                    <label for="exampleInputUsername2" class="col-sm-3 col-form-label">FirstName</label>
+                    <div class="col-sm-9">
+
+                        <input type="text" class="form-control" id="exampleInputUsername2" disabled value="@Html.DisplayFor(m => m.Users["FirstName"])" placeholder="Username">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputEmail2" class="col-sm-3 col-form-label">LastName</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" disabled value="@Html.DisplayFor(m => m.Users["LastName"])" id="exampleInputEmail2" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(m => m.Users["Phone"])" id="exampleInputMobile" placeholder="Mobile number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(m => m.Users["Email"])" id="exampleInputMobile" placeholder="Mobile number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Age</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(m => m.Users["Age"])" id="exampleInputMobile" placeholder="Mobile number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Country</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(m => m.Users["Country"])" id="exampleInputMobile" placeholder="Mobile number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">State</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(m => m.Users["State"])" id="exampleInputMobile" placeholder="Mobile number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">City</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(m => m.Users["City"])" id="exampleInputMobile" placeholder="Mobile number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Town</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(m => m.Users["Town"])" id="exampleInputMobile" placeholder="Mobile number">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">PinCode</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(m => m.Users["PinCode"])" id="exampleInputMobile" placeholder="Mobile number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleInputMobile" class="col-sm-3 col-form-label">Gender</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" disabled value="@Html.DisplayFor(m => m.Users["Gender"])" id="exampleInputMobile" placeholder="Mobile number">
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</nav>
+

@@ -1,0 +1,160 @@
+﻿html, body {
+    background-color: black;
+}
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    margin-bottom: 0;
+    color: #6c7293;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.table thead th, .jsgrid .jsgrid-table thead th {
+    border-top: 0;
+    border-bottom-width: 1px;
+    font-weight: 500;
+    color: #6c7293;
+}
+
+.table thead th{
+    vertical-align: bottom;
+    border-bottom: 2px solid #2c2e33;
+    color:white;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    font-size: 0.875rem;
+    line-height: 1;
+    white-space: nowrap;
+    color: white;
+}
+
+.table th, .table td {
+    padding: 0.9375rem;
+    vertical-align: top;
+    border-top: 1px solid #2c2e33;
+}
+
+nav {
+    background-color: #191c24;
+}
+
+.navbar {
+   margin-bottom:20px;
+}
+
+.sidebar {
+     position:fixed;
+    width:20%;
+    height:100vh;
+}
+
+.rightbar{
+    background-color:black;
+    width:80%;
+    padding:30px;
+    float:right;
+}
+.card {
+    background-color: #191c24 !important;
+}
+.card-body {
+    background-color: #191c24;
+    border-color: #191c24;
+    color:white;
+}
+.form-control {
+    border: 1px solid #2c2e33 !important;
+    height: calc(2.25rem + 2px) !important;
+    font-weight: normal !important;
+    font-size: 0.875rem !important;
+    padding: 0.625rem 0.6875rem !important;
+    background-color: #2A3038 !important;
+    border-radius: 2px !important;
+    color: #ffffff !important;
+}
+.navbar-nav .nav-item .nav-link {
+    color: aliceblue;
+}
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: cadetblue;
+    }
+
+.navbar-light .navbar-nav .active > .nav-link {
+    color: cadetblue;
+}
+
+.nav {
+    overflow: hidden;
+    flex-direction: column;
+    padding-top:10px;
+}
+
+    .nav .nav-item.active > .nav-link {
+        background: #0f1015;
+        position: relative;
+    }
+
+        .nav .nav-item.active > .nav-link .menu-title {
+            color: #ffffff;
+        }
+
+    .nav .nav-item .nav-link .menu-title {
+        color: inherit;
+        display: inline-block;
+        font-size: 0.9375rem;
+        line-height: 1;
+        vertical-align: middle;
+    }
+
+    .nav .nav-item .nav-link {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0.8rem 10px 0.8rem 1.188rem;
+        color: #6c7293;
+        -webkit-transition-duration: 0.45s;
+        -moz-transition-duration: 0.45s;
+        -o-transition-duration: 0.45s;
+        transition-duration: 0.45s;
+        transition-property: color;
+        -webkit-transition-property: color;
+        height: 46px;
+        border-radius: 0px 100px 100px 0px;
+    }
+
+

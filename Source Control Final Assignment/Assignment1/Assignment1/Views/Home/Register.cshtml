@@ -1,0 +1,215 @@
+﻿@model Assignment1.Models.Register
+
+
+<div id="cardregister"  class="card register">
+    <div class="card-body">
+        <h4 class="card-title">Register</h4>
+        </br>
+        @using (Html.BeginForm("RegisterYourSelf", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">First Name</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control", @placeholder = "First Name", @type = "text" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Last Name</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Last Name", @type = "text" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Gender</label>
+                        <div class="col-sm-9">
+                            @Html.DropDownListFor(model => model.Gender, new List<SelectListItem>
+                           {
+                                new SelectListItem { Text = "Male", Value = "Male" },
+                                new SelectListItem { Text = "Female", Value = "Female" }
+                           },"Select",new { @class="form-control" })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Date of Birth</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.Age, new { htmlAttributes = new { @class = "form-control", @placeholder = "Age", @type = "date" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.Age, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Profile Picture</label>
+                        <div class="col-sm-9">
+                            @Html.TextBoxFor(model => model.Image, new { Type = "File", @class = "form-control" })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+                                @Html.ValidationMessageFor(model => model.image_path, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Phone Number</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.PhoneNumber, new { htmlAttributes = new { @class = "form-control", @placeholder = "Phone Number", @type = "tel" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email", @type = "Email" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">State</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.State, new { htmlAttributes = new { @class = "form-control", @placeholder = "State", @type = "text" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Town</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.Town, new { htmlAttributes = new { @class = "form-control", @placeholder = "Town", @type = "text" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.Town, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Postcode</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.Pincode, new { htmlAttributes = new { @class = "form-control", @placeholder = "Post Code", @type = "text" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.Pincode, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">City</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control", @placeholder = "City", @type = "text" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Country</label>
+                        <div class="col-sm-9">
+                            @Html.DropDownListFor(model => model.Conntry, new List<SelectListItem>
+                           {
+                                new SelectListItem { Text = "India", Value = "India" },
+                                new SelectListItem { Text = "America", Value = "America" },
+                                new SelectListItem { Text = "Canada", Value = "Canada" },
+                                new SelectListItem { Text = "Japan", Value = "Japan" },
+                           }, "Select", new { @class = "form-control" })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.Conntry, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Password</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control item", @id = "round", @placeholder = "Password", @type = "password" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Confirm Password</label>
+                        <div class="col-sm-9">
+                            @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control item", @id = "round", @placeholder = "Confirm Password", @type = "password" } })
+                            <div class="validation text-center">
+                                @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group row">
+                        <input type="submit" value="Register" class="btn btn-dark mr-2 form-button" />
+
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group row">
+                        <div class="validation text-center">
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                        </div>
+
+                    </div>
+
+                </div>
+               
+            </div>
+        }
+
+        </div>
+</div>
