@@ -258,7 +258,7 @@ namespace Assignment1.Controllers
                 {
                     MailMessage mail = new MailMessage();
                     mail.To.Add(r.Email);
-                    mail.From = new MailAddress("syserrorlogin0@gmail.com");
+                    mail.From = new MailAddress("mailid");
                     mail.Subject = "Activate the Mail";
                     string link = "https://localhost:44317/Home/val?validation=" + validationhash;
                     string Body = "<a href='" + link + "'>Activation Link</a>";
@@ -268,7 +268,7 @@ namespace Assignment1.Controllers
                     smtp.Host = "smtp.gmail.com";
                     smtp.Port = 587;
                     smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = new System.Net.NetworkCredential("syserrorlogin@gmail.com", "9825780353"); // Enter seders User name and password   
+                    smtp.Credentials = new System.Net.NetworkCredential("mailid", "yourpassword"); // Enter seders User name and password   
                     smtp.EnableSsl = true;
                     smtp.Send(mail);
                     logger.Info("Activation Mail is Sent to User:" + Emailadd);
