@@ -1,0 +1,14 @@
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\obj\Debug\ProductDBA.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\obj\Debug\ProductDBA.csproj.CoreCompileInputs.cache
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\bin\Debug\ProductDatabase.dll.config
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\bin\Debug\ProductDatabase.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\bin\Debug\ProductDatabase.pdb
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\bin\Debug\EntityFramework.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\bin\Debug\ProductModel.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\bin\Debug\ProductModel.pdb
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\bin\Debug\EntityFramework.xml
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\obj\Debug\ProductDBA.csproj.CopyComplete
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\obj\Debug\ProductDatabase.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductDatabase\obj\Debug\ProductDatabase.pdb

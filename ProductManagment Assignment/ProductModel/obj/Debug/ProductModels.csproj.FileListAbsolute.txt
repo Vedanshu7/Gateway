@@ -1,0 +1,6 @@
+C:\Users\vedan\source\repos\ProductManagment\ProductModel\bin\Debug\ProductModel.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductModel\bin\Debug\ProductModel.pdb
+C:\Users\vedan\source\repos\ProductManagment\ProductModel\obj\Debug\ProductModels.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\ProductManagment\ProductModel\obj\Debug\ProductModels.csproj.CoreCompileInputs.cache
+C:\Users\vedan\source\repos\ProductManagment\ProductModel\obj\Debug\ProductModel.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductModel\obj\Debug\ProductModel.pdb

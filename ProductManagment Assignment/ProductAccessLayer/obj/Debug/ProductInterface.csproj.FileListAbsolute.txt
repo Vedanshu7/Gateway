@@ -1,0 +1,14 @@
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\obj\Debug\ProductInterface.csproj.CoreCompileInputs.cache
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\bin\Debug\ProductAccessLayer.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\bin\Debug\ProductAccessLayer.pdb
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\bin\Debug\ProductDatabase.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\bin\Debug\ProductModel.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\bin\Debug\ProductDatabase.pdb
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\bin\Debug\ProductDatabase.dll.config
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\bin\Debug\ProductModel.pdb
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\obj\Debug\ProductInterface.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\obj\Debug\ProductInterface.csproj.CopyComplete
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\obj\Debug\ProductAccessLayer.dll
+C:\Users\vedan\source\repos\ProductManagment\ProductAccessLayer\obj\Debug\ProductAccessLayer.pdb
