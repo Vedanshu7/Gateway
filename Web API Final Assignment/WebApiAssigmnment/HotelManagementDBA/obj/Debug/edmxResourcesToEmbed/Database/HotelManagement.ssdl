@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HotelManagmentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bookings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Booking_Date" Type="date" Nullable="false" />
+    <Property Name="Room_Id" Type="int" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Hotels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Address" Type="varchar(max)" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PinCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Contact_Number" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="Contact_Person" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Website" Type="nvarchar" MaxLength="500" />
+    <Property Name="Facebook" Type="nvarchar" MaxLength="100" />
+    <Property Name="Twitter" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="Created_Date" Type="date" Nullable="false" />
+    <Property Name="Created_By" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Updated_By" Type="varchar" MaxLength="100" />
+    <Property Name="Updated_Date" Type="date" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="Email" />
+    </Key>
+    <Property Name="Email" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Is_Active" Type="bit" Nullable="false" />
+    <Property Name="Created_Date" Type="date" Nullable="false" />
+    <Property Name="Updated_Date" Type="date" />
+  </EntityType>
+  <EntityType Name="Rooms">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Category" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="Created_Date" Type="date" Nullable="false" />
+    <Property Name="Created_By" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Updated_Date" Type="date" />
+    <Property Name="Updated_By" Type="varchar" MaxLength="100" />
+    <Property Name="Hotel_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Bookings__Room_I__300424B4">
+    <End Role="Rooms" Type="Self.Rooms" Multiplicity="1" />
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rooms">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Bookings">
+        <PropertyRef Name="Room_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rooms__Hotel_Id__2C3393D0">
+    <End Role="Hotels" Type="Self.Hotels" Multiplicity="1" />
+    <End Role="Rooms" Type="Self.Rooms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotels">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rooms">
+        <PropertyRef Name="Hotel_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HotelManagmentModelStoreContainer">
+    <EntitySet Name="Bookings" EntityType="Self.Bookings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hotels" EntityType="Self.Hotels" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rooms" EntityType="Self.Rooms" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Bookings__Room_I__300424B4" Association="Self.FK__Bookings__Room_I__300424B4">
+      <End Role="Rooms" EntitySet="Rooms" />
+      <End Role="Bookings" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rooms__Hotel_Id__2C3393D0" Association="Self.FK__Rooms__Hotel_Id__2C3393D0">
+      <End Role="Hotels" EntitySet="Hotels" />
+      <End Role="Rooms" EntitySet="Rooms" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,582 @@
+{
+	"info": {
+		"_postman_id": "908b0c01-2bdc-42c9-a5cf-2f450f55bb12",
+		"name": "WebApiAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44347/api/Hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n       \"Name\":\"S S P Hotel\",\r\n       \"Address\":\"C -13 Ulasnagar Bandra\",\r\n       \"City\":\"Mumbai\",\r\n       \"Contact_Number\": 9650594624,\r\n       \"Contact_Person\":\"Vishal Sharma\",\r\n       \"Created_By\":\"Admin\",\r\n       \"PinCode\":\"540025\",\r\n       \"IsActive\":1,\r\n        \"Website\":\"SSP.com\",\r\n        \"Facebook\":\"SSPFacebook\",\r\n        \"Twitter\":\"SSPusername\"\r\n    },\r\n    {\r\n       \"Name\":\"H S P Hotel\",\r\n       \"Address\":\"D -20 Ulasnagar Noida\",\r\n       \"City\":\"Delhi\",\r\n       \"Contact_Number\": 456982366,\r\n       \"Contact_Person\":\"Kunal Varma\",\r\n       \"Created_By\":\"Admin\",\r\n       \"PinCode\":\"12000\",\r\n       \"IsActive\":1,\r\n        \"Website\":\"HSP.com\",\r\n        \"Facebook\":\"HSPFacebook\",\r\n        \"Twitter\":\"HSPusername\"\r\n    },\r\n    {\r\n       \"Name\":\"Krishna Hotel\",\r\n       \"Address\":\"L -15 Jambugodha Kondivali\",\r\n       \"City\":\"Mumbai\",\r\n       \"Contact_Number\": 9650594824,\r\n       \"Contact_Person\":\"Nagarjun Sharma\",\r\n       \"Created_By\":\"Admin\",\r\n       \"PinCode\":\"540045\",\r\n       \"IsActive\":1,\r\n        \"Website\":\"Krishna.com\",\r\n        \"Facebook\":\"KrishnaFacebook\",\r\n        \"Twitter\":\"Krishnausername\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44347/api/Hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Room/AddRoom",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"Name\":\"B-140\",\r\n        \"Category\":\"Categories 1\",\r\n        \"Price\":1000,\r\n        \"IsActive\":1,\r\n        \"Created_By\":\"Admin\",\r\n        \"Hotel_Id\":1\r\n    },\r\n    {\r\n        \"Name\":\"B-141\",\r\n        \"Category\":\"Categories 2\",\r\n        \"Price\":2000,\r\n        \"IsActive\":1,\r\n        \"Created_By\":\"Admin\",\r\n        \"Hotel_Id\":1\r\n    },\r\n    {\r\n        \"Name\":\"B-142\",\r\n        \"Category\":\"Categories 3\",\r\n        \"Price\":5000,\r\n        \"IsActive\":1,\r\n        \"Created_By\":\"Admin\",\r\n        \"Hotel_Id\":1\r\n    },\r\n    {\r\n        \"Name\":\"A-100\",\r\n        \"Category\":\"Categories 1\",\r\n        \"Price\":1000,\r\n        \"IsActive\":1,\r\n        \"Created_By\":\"Admin\",\r\n        \"Hotel_Id\":2\r\n    },\r\n    {\r\n        \"Name\":\"A-101\",\r\n        \"Category\":\"Categories 2\",\r\n        \"Price\":5000,\r\n        \"IsActive\":1,\r\n        \"Created_By\":\"Admin\",\r\n        \"Hotel_Id\":2\r\n    },\r\n    {\r\n        \"Name\":\"A-103\",\r\n        \"Category\":\"Categories 3\",\r\n        \"Price\":10000,\r\n        \"IsActive\":1,\r\n        \"Created_By\":\"Admin\",\r\n        \"Hotel_Id\":2\r\n    },\r\n    {\r\n        \"Name\":\"D-401\",\r\n        \"Category\":\"Categories 1\",\r\n        \"Price\":500,\r\n        \"IsActive\":1,\r\n        \"Created_By\":\"Admin\",\r\n        \"Hotel_Id\":3\r\n    },\r\n    {\r\n        \"Name\":\"D-403\",\r\n        \"Category\":\"Categories 2\",\r\n        \"Price\":1000,\r\n        \"IsActive\":1,\r\n        \"Created_By\":\"Admin\",\r\n        \"Hotel_Id\":3\r\n    },\r\n    {\r\n        \"Name\":\"D-405\",\r\n        \"Category\":\"Categories 3\",\r\n        \"Price\":5000,\r\n        \"IsActive\":1,\r\n        \"Created_By\":\"Admin\",\r\n        \"Hotel_Id\":3\r\n    }\r\n\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44347/api/Room/AddRoom",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Room",
+						"AddRoom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Booking/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Booking/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Booking",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Booking/2/2021-01-20/Deleted",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Booking/2/2021-01-20/Deleted",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Booking",
+						"2",
+						"2021-01-20",
+						"Deleted"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Room/availability/2/2021-01-20",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Room/availability/2/2021-01-20",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Room",
+						"availability",
+						"2",
+						"2021-01-20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Room/availability/2/2021-01-14",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Room/availability/2/2021-01-14",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Room",
+						"availability",
+						"2",
+						"2021-01-14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Booking/2/2021-01-20",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Booking/2/2021-01-20",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Booking",
+						"2",
+						"2021-01-20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Room/availability/2/2021-01-14",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Room/availability/2/2021-01-14",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Room",
+						"availability",
+						"2",
+						"2021-01-14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Room/BookRoom/2/2021-01-14",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Room/BookRoom/2/2021-01-14",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Room",
+						"BookRoom",
+						"2",
+						"2021-01-14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Room/availability/1/2021-01-13",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Room/availability/1/2021-01-13",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Room",
+						"availability",
+						"1",
+						"2021-01-13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Room/availability/1/2021-01-15",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Room/availability/1/2021-01-15",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Room",
+						"availability",
+						"1",
+						"2021-01-15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Room/availability/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Room/availability/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Room",
+						"availability",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Room/availability/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Room/availability/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Room",
+						"availability",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Hotel/GetRoomsOfHotels/price/1000",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Hotel/GetRoomsOfHotels/price/1000",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Hotel",
+						"GetRoomsOfHotels",
+						"price",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Hotel/GetRoomsOfHotels/city/Mumbai",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Hotel/GetRoomsOfHotels/city/Mumbai",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Hotel",
+						"GetRoomsOfHotels",
+						"city",
+						"Mumbai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Hotel/GetRoomsOfHotels",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Hotel/GetRoomsOfHotels",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Hotel",
+						"GetRoomsOfHotels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Hotel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZGFuc2h1am9zaGk1MEBnbWFpbC5jb20iLCJuYmYiOjE2MTAzOTQzNzAsImV4cCI6MTYxMDM5Nzk3MCwiaWF0IjoxNjEwMzk0MzcwfQ.qMQ1Q2py4W2WTqW4YBM1UO_uBUmfoU88-jYj0Hywwh4:vedanshujoshi50@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44347/api/Hotel",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Hotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44347/api/Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\":\"vedanshujoshi50@gmail.com\",\r\n    \"Password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44347/api/Login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

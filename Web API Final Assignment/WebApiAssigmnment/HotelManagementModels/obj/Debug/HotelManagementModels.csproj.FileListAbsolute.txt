@@ -1,0 +1,6 @@
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementModels\bin\Debug\HotelManagementModels.dll
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementModels\bin\Debug\HotelManagementModels.pdb
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementModels\obj\Debug\HotelManagementModels.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementModels\obj\Debug\HotelManagementModels.csproj.CoreCompileInputs.cache
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementModels\obj\Debug\HotelManagementModels.dll
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementModels\obj\Debug\HotelManagementModels.pdb

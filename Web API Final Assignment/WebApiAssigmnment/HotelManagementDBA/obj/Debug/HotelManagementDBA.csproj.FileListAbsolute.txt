@@ -1,0 +1,14 @@
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\bin\Debug\HotelManagementDBA.dll.config
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\bin\Debug\HotelManagementDBA.dll
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\bin\Debug\HotelManagementDBA.pdb
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\bin\Debug\EntityFramework.dll
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\bin\Debug\HotelManagementModels.dll
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\bin\Debug\HotelManagementModels.pdb
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\bin\Debug\EntityFramework.xml
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\obj\Debug\HotelManagementDBA.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\obj\Debug\HotelManagementDBA.csproj.CoreCompileInputs.cache
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\obj\Debug\HotelManagementDBA.csproj.CopyComplete
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\obj\Debug\HotelManagementDBA.dll
+C:\Users\vedan\source\repos\WebApiAssigmnment\HotelManagementDBA\obj\Debug\HotelManagementDBA.pdb
