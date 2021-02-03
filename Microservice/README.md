@@ -1,10 +1,10 @@
 # 1.	What is microservices?
 
-## Microservices is a type of architecture which allows the creation of Loosely coupled and Highly maintainable application means it is a collection of Independent services. whole project separated by their different actions so the any action can highly maintain and if required service can have API calls for access of other services. Through which it can achieve the dependency of other services.
+### Microservices is a type of architecture which allows the creation of Loosely coupled and Highly maintainable application means it is a collection of Independent services. whole project separated by their different actions so the any action can highly maintain and if required service can have API calls for access of other services. Through which it can achieve the dependency of other services.
 
 # 2.	Challenges with monolithic oriented architecture?
 
-## So it is very difficult to handle the whole architecture in the conventional monolithic oriented architecture when the project size is huge, it can only be coded in one form of structure, it does not support the other architecture or in hybrid architecture it is hard to solve conflict when there are multiple resources are used by multiple entities and also to change the code is very difficult because of large code dependency and for update whole application needs to redeploy and the most applicable challenge is size of the project if project size will increase then the initial load for server will increase and the load time for end user will increase that might affect the business.
+### So it is very difficult to handle the whole architecture in the conventional monolithic oriented architecture when the project size is huge, it can only be coded in one form of structure, it does not support the other architecture or in hybrid architecture it is hard to solve conflict when there are multiple resources are used by multiple entities and also to change the code is very difficult because of large code dependency and for update whole application needs to redeploy and the most applicable challenge is size of the project if project size will increase then the initial load for server will increase and the load time for end user will increase that might affect the business.
 
 # 3.	Any three advantage and disadvantage of microservices
 
