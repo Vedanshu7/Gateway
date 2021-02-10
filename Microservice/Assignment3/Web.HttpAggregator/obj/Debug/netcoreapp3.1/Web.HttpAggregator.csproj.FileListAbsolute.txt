@@ -1,0 +1,8 @@
+C:\Users\vedan\source\repos\Assignment3\Web.HttpAggregator\bin\Debug\netcoreapp3.1\CommonObjects.dll
+C:\Users\vedan\source\repos\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\Web.HttpAggregator.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\Web.HttpAggregator.AssemblyInfoInputs.cache
+C:\Users\vedan\source\repos\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\Web.HttpAggregator.AssemblyInfo.cs
+C:\Users\vedan\source\repos\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\staticwebassets\Web.HttpAggregator.StaticWebAssets.Manifest.cache
+C:\Users\vedan\source\repos\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\staticwebassets\Web.HttpAggregator.StaticWebAssets.xml
+C:\Users\vedan\source\repos\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\scopedcss\bundle\Web.HttpAggregator.styles.css
+C:\Users\vedan\source\repos\Assignment3\Web.HttpAggregator\obj\Debug\netcoreapp3.1\Web.HttpAggregator.RazorTargetAssemblyInfo.cache

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cH8JV1BIWGIUefyYfyQ1SxBK4i+fCKXRGdbY6QZsq/Uaf0HDVCsuYo/47IHVNmJn/i6KIw7F2M8/Z9mvoV3xbg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vedan\\source\\repos\\Assignment3\\Web.HttpAggregator\\Web.HttpAggregator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vedan\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

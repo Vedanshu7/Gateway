@@ -1,0 +1,9 @@
+C:\Users\vedan\source\repos\Assignment3\CommonObjects\bin\Debug\netstandard2.0\CommonObjects.deps.json
+C:\Users\vedan\source\repos\Assignment3\CommonObjects\bin\Debug\netstandard2.0\CommonObjects.dll
+C:\Users\vedan\source\repos\Assignment3\CommonObjects\bin\Debug\netstandard2.0\CommonObjects.pdb
+C:\Users\vedan\source\repos\Assignment3\CommonObjects\obj\Debug\netstandard2.0\CommonObjects.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\Assignment3\CommonObjects\obj\Debug\netstandard2.0\CommonObjects.AssemblyInfoInputs.cache
+C:\Users\vedan\source\repos\Assignment3\CommonObjects\obj\Debug\netstandard2.0\CommonObjects.AssemblyInfo.cs
+C:\Users\vedan\source\repos\Assignment3\CommonObjects\obj\Debug\netstandard2.0\CommonObjects.csproj.CoreCompileInputs.cache
+C:\Users\vedan\source\repos\Assignment3\CommonObjects\obj\Debug\netstandard2.0\CommonObjects.dll
+C:\Users\vedan\source\repos\Assignment3\CommonObjects\obj\Debug\netstandard2.0\CommonObjects.pdb

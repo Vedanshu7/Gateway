@@ -1,0 +1,9 @@
+C:\Users\vedan\source\repos\Assignment3\UserEntities\bin\Debug\netstandard2.0\UserEntities.deps.json
+C:\Users\vedan\source\repos\Assignment3\UserEntities\bin\Debug\netstandard2.0\UserEntities.dll
+C:\Users\vedan\source\repos\Assignment3\UserEntities\bin\Debug\netstandard2.0\UserEntities.pdb
+C:\Users\vedan\source\repos\Assignment3\UserEntities\obj\Debug\netstandard2.0\UserEntities.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\Assignment3\UserEntities\obj\Debug\netstandard2.0\UserEntities.AssemblyInfoInputs.cache
+C:\Users\vedan\source\repos\Assignment3\UserEntities\obj\Debug\netstandard2.0\UserEntities.AssemblyInfo.cs
+C:\Users\vedan\source\repos\Assignment3\UserEntities\obj\Debug\netstandard2.0\UserEntities.csproj.CoreCompileInputs.cache
+C:\Users\vedan\source\repos\Assignment3\UserEntities\obj\Debug\netstandard2.0\UserEntities.dll
+C:\Users\vedan\source\repos\Assignment3\UserEntities\obj\Debug\netstandard2.0\UserEntities.pdb
