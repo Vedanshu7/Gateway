@@ -1,0 +1,9 @@
+C:\Users\vedan\source\repos\SBS\SBS.MDL\bin\Debug\SBS.MDL.dll
+C:\Users\vedan\source\repos\SBS\SBS.MDL\bin\Debug\SBS.MDL.pdb
+C:\Users\vedan\source\repos\SBS\SBS.MDL\obj\Debug\SBS.MDL.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\SBS\SBS.MDL\obj\Debug\SBS.MDL.csproj.CoreCompileInputs.cache
+C:\Users\vedan\source\repos\SBS\SBS.MDL\obj\Debug\SBS.MDL.dll
+C:\Users\vedan\source\repos\SBS\SBS.MDL\obj\Debug\SBS.MDL.pdb
+C:\Users\vedan\source\repos\SBS\SBS.MDL\bin\Debug\SBS.Common.dll
+C:\Users\vedan\source\repos\SBS\SBS.MDL\bin\Debug\SBS.Common.pdb
+C:\Users\vedan\source\repos\SBS\SBS.MDL\obj\Debug\SBS.MDL.csproj.CopyComplete

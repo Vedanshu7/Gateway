@@ -1,0 +1,14 @@
+C:\Users\vedan\source\repos\SBS\SBS.DAL\bin\Debug\SBS.DAL.dll.config
+C:\Users\vedan\source\repos\SBS\SBS.DAL\bin\Debug\SBS.DAL.dll
+C:\Users\vedan\source\repos\SBS\SBS.DAL\bin\Debug\SBS.DAL.pdb
+C:\Users\vedan\source\repos\SBS\SBS.DAL\bin\Debug\EntityFramework.dll
+C:\Users\vedan\source\repos\SBS\SBS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vedan\source\repos\SBS\SBS.DAL\bin\Debug\EntityFramework.xml
+C:\Users\vedan\source\repos\SBS\SBS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vedan\source\repos\SBS\SBS.DAL\obj\Debug\SBS.DAL.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\SBS\SBS.DAL\obj\Debug\SBS.DAL.csproj.CoreCompileInputs.cache
+C:\Users\vedan\source\repos\SBS\SBS.DAL\obj\Debug\SBS.DAL.csproj.CopyComplete
+C:\Users\vedan\source\repos\SBS\SBS.DAL\obj\Debug\SBS.DAL.dll
+C:\Users\vedan\source\repos\SBS\SBS.DAL\obj\Debug\SBS.DAL.pdb
+C:\Users\vedan\source\repos\SBS\SBS.DAL\bin\Debug\SBS.Common.dll
+C:\Users\vedan\source\repos\SBS\SBS.DAL\bin\Debug\SBS.Common.pdb

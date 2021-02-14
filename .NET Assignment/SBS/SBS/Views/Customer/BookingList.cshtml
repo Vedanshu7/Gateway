@@ -1,0 +1,81 @@
+﻿@model IEnumerable<SBS.MDL.Models.BookAppointment>
+
+@{
+    ViewBag.Title = "BookingList";
+}
+
+<div class="row pt-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Booking List</h3>
+            </div>
+
+            <!-- /.card-header -->
+            <div class="card-body">
+                <div class="table-responsive">
+                    <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.DealerName)
+                                    </th>
+                                    <td>
+                                        @Html.DisplayNameFor(model => model.VehicleModel)
+                                    </td>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.MechanicName)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.ServiceType)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.BookingDateTime)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DealerName)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.VehicleModel)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.MechanicName)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ServiceType)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.BookingDateTime)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                                            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+</div>

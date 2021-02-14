@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3955ab37798846de97cb43efd7b13586" Name="Diagram1" ZoomLevel="83">
+        <EntityTypeShape EntityType="SBSModel.Customer" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SBSModel.Dealer" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SBSModel.Mechanic" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SBSModel.Service" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SBSModel.Vehicle" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="SBSModel.FK__Vehicles__Cust_I__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="SBSModel.FK__Mechanics__Deale__2E1BDC42" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SBSModel.Appointment" Width="1.5" PointX="10.25" PointY="2.125" />
+        <AssociationConnector Association="SBSModel.FK__Appointme__Custo__3D5E1FD2" />
+        <AssociationConnector Association="SBSModel.FK__Appointme__Deale__3C69FB99" />
+        <AssociationConnector Association="SBSModel.FK__Appointme__Mecha__3F466844" />
+        <AssociationConnector Association="SBSModel.FK__Appointme__Servi__403A8C7D" />
+        <AssociationConnector Association="SBSModel.FK__Appointme__Vehic__3E52440B" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

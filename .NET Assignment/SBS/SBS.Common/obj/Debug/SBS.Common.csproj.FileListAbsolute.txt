@@ -1,0 +1,6 @@
+C:\Users\vedan\source\repos\SBS\SBS.Common\bin\Debug\SBS.Common.dll
+C:\Users\vedan\source\repos\SBS\SBS.Common\bin\Debug\SBS.Common.pdb
+C:\Users\vedan\source\repos\SBS\SBS.Common\obj\Debug\SBS.Common.csprojAssemblyReference.cache
+C:\Users\vedan\source\repos\SBS\SBS.Common\obj\Debug\SBS.Common.csproj.CoreCompileInputs.cache
+C:\Users\vedan\source\repos\SBS\SBS.Common\obj\Debug\SBS.Common.dll
+C:\Users\vedan\source\repos\SBS\SBS.Common\obj\Debug\SBS.Common.pdb

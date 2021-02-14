@@ -1,0 +1,80 @@
+﻿@model IEnumerable<SBS.MDL.Models.VehicleViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row pt-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Car List</h3>
+            </div>
+
+            <!-- /.card-header -->
+            <div class="card-body">
+                <div class="table-responsive">
+                    <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.OwnerName)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Make)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Model)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.LicensePlate)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.RegistrationDate)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Chessi_Number)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.OwnerName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Make)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Model)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.LicensePlate)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.RegistrationDate)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Chessi_Number)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+</div>
