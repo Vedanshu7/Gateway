@@ -1,0 +1,196 @@
+﻿@model SBS.MDL.Models.CustomerInformationViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutDealer.cshtml";
+}
+
+<div class="pt-3">
+    <div class="card border-dark">
+        <div class="card-header">Customer's Name: @Html.DisplayFor(model => model.customer.FirstName) @Html.DisplayFor(model => model.customer.LastName)</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-4">
+                    <p class="card-text">Address: @Html.DisplayFor(model => model.customer.Address) </p>
+                </div>
+                <div class="col-4">
+                    <p class="card-text">City: @Html.DisplayFor(model => model.customer.City) </p>
+                </div>
+                <div class="col-4">
+                    <p class="card-text">State: @Html.DisplayFor(model => model.customer.State) </p>
+                </div>
+                <div class="col-4">
+                    <p class="card-text">ZipCode: @Html.DisplayFor(model => model.customer.ZipCode)</p>
+                </div>
+                <div class="col-4">
+                    <p class="card-text">Phone: @Html.DisplayFor(model => model.customer.Phone)</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p class="card-text">Email: @Html.DisplayFor(model => model.customer.Email)</p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="row pt-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Appointment List</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+
+                                <tr>
+                                    <th>
+                                        DealerName
+                                    </th>
+                                    <td>
+                                        VehicleModel
+                                    </td>
+                                    <th>
+                                        MechanicName
+                                    </th>
+                                    <th>
+                                        ServiceType
+                                    </th>
+                                    <th>
+                                        BookingDateTime
+                                    </th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.appointments)
+                                {
+                                    <tr>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DealerName)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.VehicleModel)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.MechanicName)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ServiceType)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.BookingDateTime)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Edit", "EditBooking", new { id = item.Id, customerId = Model.customer.Id }, new { @class = "btn btn-primary" })
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Delete", "DeleteBooking", new { id = item.Id, customerId = Model.customer.Id }, new { @class = "btn btn-danger" })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+</div>
+
+<div class="row pt-3">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Vehicle List</h3>
+            </div>
+
+            <!-- /.card-header -->
+            <div class="card-body">
+                <div class="table-responsive">
+                    <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Owner Name
+                                    </th>
+                                    <th>
+                                        Make
+                                    </th>
+                                    <th>
+                                        Model
+                                    </th>
+                                    <th>
+                                        License Plate
+                                    </th>
+                                    <th>
+                                        Registration Date
+                                    </th>
+                                    <th>
+                                        Chessi Number
+                                    </th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.vehicles)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.OwnerName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Make)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Model)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.LicensePlate)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.RegistrationDate)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Chessi_Number)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Edit", "EditVehicle", new { id = item.Id, customerId = Model.customer.Id }, new { @class = "btn btn-primary" })
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Delete", "DeleteVehicle", new { id = item.Id, customerId = Model.customer.Id }, new { @class = "btn btn-danger" })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+</div>

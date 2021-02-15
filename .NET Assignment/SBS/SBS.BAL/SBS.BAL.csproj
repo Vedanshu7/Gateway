@@ -80,12 +80,16 @@
     <Compile Include="Helper\UnityRepositoryHelper.cs" />
     <Compile Include="Interface\IAuthenticationManager.cs" />
     <Compile Include="Interface\IBookingManager.cs" />
+    <Compile Include="Interface\ICustomerManager.cs" />
     <Compile Include="Interface\IDealerManager.cs" />
+    <Compile Include="Interface\IMechanicManager.cs" />
     <Compile Include="Interface\IServiceManager.cs" />
     <Compile Include="Interface\IVehicleManager.cs" />
     <Compile Include="Manager\AuthenticationManager.cs" />
     <Compile Include="Manager\BookingManager.cs" />
+    <Compile Include="Manager\CustomerManager.cs" />
     <Compile Include="Manager\DealerManager.cs" />
+    <Compile Include="Manager\MechanicManager.cs" />
     <Compile Include="Manager\ServiceManager.cs" />
     <Compile Include="Manager\VehicleManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

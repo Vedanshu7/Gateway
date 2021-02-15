@@ -17,6 +17,8 @@ namespace SBS
             container.RegisterType<IVehicleManager, VehicleManager>();
             container.RegisterType<IServiceManager, ServiceManager>();
             container.RegisterType<IBookingManager, BookingManager>();
+            container.RegisterType<IMechanicManager, MechanicManager>();
+            container.RegisterType<ICustomerManager, CustomerManager>(); ;
             container.AddNewExtension<UnityRepositoryHelper>();
             // register all your components with the container here
             // it is NOT necessary to register your controllers

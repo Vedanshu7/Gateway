@@ -22,8 +22,41 @@ namespace SBS.BAL.Manager
             config = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<DAL.Database.Dealer, MDL.Models.Dealer>();
+                cfg.CreateMap<DAL.Database.Dealer, MDL.Models.DealerViewModel>();
+                cfg.CreateMap<MDL.Models.DealerViewModel, DAL.Database.Dealer>();
             });
             mapper = config.CreateMapper();
+        }
+
+        public bool CreateDealer(DealerViewModel dealer)
+        {
+            DAL.Database.Dealer dealerfordb = mapper.Map<DealerViewModel, DAL.Database.Dealer>(dealer);
+            return _DealerRepository.CreateDealer(dealerfordb);
+        }
+
+        public bool DeleteDealer(int id)
+        {
+            return _DealerRepository.DeleteDealer(id);
+        }
+
+        public bool EditDealer(DealerViewModel dealer)
+        {
+            DAL.Database.Dealer dealerfordb = mapper.Map<DealerViewModel, DAL.Database.Dealer>(dealer);
+            return _DealerRepository.EditDealer(dealerfordb);
+        }
+
+        public DealerViewModel GetDealer(int dealerId)
+        {
+            DAL.Database.Dealer dealerfromdb = _DealerRepository.GetDealer(dealerId);
+            DealerViewModel dealer = mapper.Map<DAL.Database.Dealer, DealerViewModel>(dealerfromdb);
+            return dealer;
+        }
+
+        public List<DealerViewModel> GetDealers()
+        {
+            List<DAL.Database.Dealer> dealersfromdb = _DealerRepository.GetDealers();
+            List<MDL.Models.DealerViewModel> dealers = mapper.Map<List<DAL.Database.Dealer>, List<MDL.Models.DealerViewModel>>(dealersfromdb);
+            return dealers;
         }
 
         public List<Dealer> GetDealersForDropDown()

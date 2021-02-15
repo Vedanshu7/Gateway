@@ -145,6 +145,7 @@
     <Compile Include="Attributes\Authentication\Authenticate.cs" />
     <Compile Include="Controllers\AuthenticationController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\DealerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2058,6 +2059,24 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_LayoutView.cshtml" />
+    <Content Include="Views\Customer\EditBooking.cshtml" />
+    <Content Include="Views\Customer\EditVehicle.cshtml" />
+    <Content Include="Views\Dealer\Index.cshtml" />
+    <Content Include="Views\Dealer\GetDetailsOfDealer.cshtml" />
+    <Content Include="Views\Dealer\GetDetailsOfCustomer.cshtml" />
+    <Content Include="Views\Dealer\EditDealer.cshtml" />
+    <Content Include="Views\Dealer\EditCustomer.cshtml" />
+    <Content Include="Views\Dealer\EditService.cshtml" />
+    <Content Include="Views\Dealer\EditBooking.cshtml" />
+    <Content Include="Views\Dealer\EditMechanic.cshtml" />
+    <Content Include="Views\Dealer\EditVehicle.cshtml" />
+    <Content Include="Views\Dealer\CreateDealer.cshtml" />
+    <Content Include="Views\Dealer\CreateCustomer.cshtml" />
+    <Content Include="Views\Dealer\CreateService.cshtml" />
+    <Content Include="Views\Dealer\CreateBooking.cshtml" />
+    <Content Include="Views\Dealer\CreateMechanic.cshtml" />
+    <Content Include="Views\Dealer\CreateVehicle.cshtml" />
+    <Content Include="Views\Shared\_LayoutDealer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

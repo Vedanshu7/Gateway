@@ -10,5 +10,10 @@ namespace SBS.BAL.Interface
     public interface IServiceManager
     {
         List<Service> GetServicesForDropDown();
+        List<ServiceViewModel> GetServices();
+        ServiceViewModel GetService(int id);
+        bool DeleteService(int id);
+        bool CreateService(ServiceViewModel service);
+        bool EditService(ServiceViewModel service);
     }
 }

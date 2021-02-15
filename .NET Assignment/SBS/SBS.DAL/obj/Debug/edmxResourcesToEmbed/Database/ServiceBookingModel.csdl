@@ -29,7 +29,7 @@
     <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="ZipCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="HomePhone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="HomePhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Note" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Mechanics" Relationship="Self.FK__Mechanics__Deale__2E1BDC42" FromRole="Dealers" ToRole="Mechanics" />

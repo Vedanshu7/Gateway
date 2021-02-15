@@ -12,5 +12,8 @@ namespace SBS.BAL.Interface
         bool AddVehicle(VehicleViewModel vehicle,int customerid);
         List<VehicleViewModel> GetVehicles(int customerid);
         List<Vehicle> GetVehiclesForDropDown(int customerid);
+        VehicleViewModel GetVehicle(int id, int customerId);
+        bool UpdateVehicle(VehicleViewModel vehicle);
+        bool DeleteVehicle(int id, int customerId);
     }
 }

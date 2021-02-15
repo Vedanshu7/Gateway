@@ -8,11 +8,13 @@ namespace SBS.MDL.Models
 {
     public class VehicleViewModel
     {
+        public int Id { get; set; }
         public string OwnerName { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
         public string LicensePlate { get; set; }
         public System.DateTime RegistrationDate { get; set; }
         public string Chessi_Number { get; set; }
+        public int CustomerId { get; set; }
     }
 }

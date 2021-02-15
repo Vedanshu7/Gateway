@@ -9,7 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Lead Management System</title>
+    <title>Service Booking System</title>
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -31,13 +31,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     @Html.ActionLink("Home", "Index", "Customer", null, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    @Html.ActionLink("AddVehicle", "AddVehicle", "Custmer", null, new { @class = "nav-link" })
+                    @Html.ActionLink("Add Vehicle", "AddVehicle", "Customer", null, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    @Html.ActionLink("BookAppointment", "BookAppointment", "Custmer", null, new { @class = "nav-link" })
+                    @Html.ActionLink("Book Appointment", "BookAppointment", "Customer", null, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    @Html.ActionLink("BookingList", "BookingList", "Custmer", null, new { @class = "nav-link" })
+                    @Html.ActionLink("Booking List", "BookingList", "Customer", null, new { @class = "nav-link" })
                 </li>
             </ul>
 
@@ -58,7 +58,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </nav>
         <!-- /.navbar -->
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark-primary">
             <!-- Brand Logo -->
             <a href="#" class="brand-link">
                
@@ -69,7 +69,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                   
+                   <img src="~/adminlte/img/avatar.png" />
                     <div class="info">
                         <a href="#" class="d-block">Customer</a>
                     </div>
@@ -84,7 +84,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    Starter Pages
+                                    Usefull Links
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
@@ -97,20 +97,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </li>
                                 <li class="nav-item">
                                     <a href="@Url.Action("AddVehicle", "Customer")" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>AddVehicle</p>
+                                        <i class="far fa-cab nav-icon"></i>
+                                        <p>Add Vehicle</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="@Url.Action("BookAppointment", "Customer")" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>BookAppointment</p>
+                                        <i class="far fa-calendar nav-icon"></i>
+                                        <p>Book Appointment</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="@Url.Action("BookingList", "Customer")" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>BookingList</p>
+                                        <i class="far fa-book nav-icon"></i>
+                                        <p>Booking List</p>
                                     </a>
                                 </li>
                             </ul>

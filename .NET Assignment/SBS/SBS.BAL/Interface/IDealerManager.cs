@@ -10,5 +10,10 @@ namespace SBS.BAL.Interface
     public interface IDealerManager
     {
         List<Dealer> GetDealersForDropDown();
+        List<DealerViewModel> GetDealers();
+        DealerViewModel GetDealer(int dealerId);
+        bool DeleteDealer(int id);
+        bool EditDealer(DealerViewModel dealer);
+        bool CreateDealer(DealerViewModel dealer);
     }
 }

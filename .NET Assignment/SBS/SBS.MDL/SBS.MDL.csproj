@@ -43,10 +43,16 @@
   <ItemGroup>
     <Compile Include="Models\BookAppointment.cs" />
     <Compile Include="Models\BookAppointmentViewModel.cs" />
+    <Compile Include="Models\CustomerInformationViewModel.cs" />
     <Compile Include="Models\Dealer.cs" />
+    <Compile Include="Models\DealerViewModel.cs" />
+    <Compile Include="Models\DealerInformationViewModel.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\MainPageViewModel.cs" />
+    <Compile Include="Models\MechanicViewModel.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\ServiceViewModel.cs" />
     <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Models\VehicleViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

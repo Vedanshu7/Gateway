@@ -11,5 +11,9 @@ namespace SBS.DAL.Interface
     {
         bool Booking(Appointment appointment);
         List<Appointment> GetBookings(int customerId);
+        Appointment GetBooking(int id, int customerId);
+        bool UpdateBooking(Appointment appointment);
+        bool DeleteBooking(int id, int customerId);
+        List<Appointment> GetBookingOfDealer(int dealerId);
     }
 }

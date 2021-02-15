@@ -7,7 +7,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Car List</h3>
+                <h3 class="card-title">Vehicle List</h3>
             </div>
 
             <!-- /.card-header -->
@@ -36,6 +36,7 @@
                                         @Html.DisplayNameFor(model => model.Chessi_Number)
                                     </th>
                                     <th></th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -61,9 +62,10 @@
                                             @Html.DisplayFor(modelItem => item.Chessi_Number)
                                         </td>
                                         <td>
-                                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                                            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                                            @Html.ActionLink("Edit", "EditVehicle", new { id=item.Id }, new { @class = "btn btn-primary" })
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Delete", "DeleteVehicle", new { id=item.Id }, new { @class = "btn btn-danger" })
                                         </td>
                                     </tr>
                                 }

@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="DealerId" Type="int" Nullable="false" />
           <Property Name="CustomerId" Type="int" Nullable="false" />
           <Property Name="VehicleId" Type="int" Nullable="false" />
@@ -47,7 +47,7 @@
           <Property Name="LastName" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="Address" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="ZipCode" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="HomePhone" Type="varchar" MaxLength="10" />
+          <Property Name="HomePhone" Type="varchar" MaxLength="20" />
           <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="Note" Type="varchar" MaxLength="100" />
         </EntityType>
@@ -67,7 +67,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Price" Type="money" Nullable="false" />
           <Property Name="Duration" Type="time" Precision="7" Nullable="false" />
@@ -86,7 +86,7 @@
           <Property Name="Chessi_Number" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="Cust_Id" Type="int" Nullable="false" />
         </EntityType>
-        <Association Name="FK__Appointme__Custo__3D5E1FD2">
+        <Association Name="FK__Appointme__Custo__440B1D61">
           <End Role="Customers" Type="Self.Customers" Multiplicity="1" />
           <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -98,7 +98,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Appointme__Deale__3C69FB99">
+        <Association Name="FK__Appointme__Deale__4316F928">
           <End Role="Dealers" Type="Self.Dealers" Multiplicity="1" />
           <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -110,7 +110,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Appointme__Mecha__3F466844">
+        <Association Name="FK__Appointme__Mecha__45F365D3">
           <End Role="Mechanics" Type="Self.Mechanics" Multiplicity="1" />
           <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -122,7 +122,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Appointme__Servi__403A8C7D">
+        <Association Name="FK__Appointme__Servi__49C3F6B7">
           <End Role="Services" Type="Self.Services" Multiplicity="1" />
           <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -134,7 +134,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Appointme__Vehic__3E52440B">
+        <Association Name="FK__Appointme__Vehic__44FF419A">
           <End Role="Vehicles" Type="Self.Vehicles" Multiplicity="1" />
           <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
           <ReferentialConstraint>
@@ -177,23 +177,23 @@
           <EntitySet Name="Mechanics" EntityType="Self.Mechanics" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Services" EntityType="Self.Services" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Vehicles" EntityType="Self.Vehicles" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__Appointme__Custo__3D5E1FD2" Association="Self.FK__Appointme__Custo__3D5E1FD2">
+          <AssociationSet Name="FK__Appointme__Custo__440B1D61" Association="Self.FK__Appointme__Custo__440B1D61">
             <End Role="Customers" EntitySet="Customers" />
             <End Role="Appointment" EntitySet="Appointment" />
           </AssociationSet>
-          <AssociationSet Name="FK__Appointme__Deale__3C69FB99" Association="Self.FK__Appointme__Deale__3C69FB99">
+          <AssociationSet Name="FK__Appointme__Deale__4316F928" Association="Self.FK__Appointme__Deale__4316F928">
             <End Role="Dealers" EntitySet="Dealers" />
             <End Role="Appointment" EntitySet="Appointment" />
           </AssociationSet>
-          <AssociationSet Name="FK__Appointme__Mecha__3F466844" Association="Self.FK__Appointme__Mecha__3F466844">
+          <AssociationSet Name="FK__Appointme__Mecha__45F365D3" Association="Self.FK__Appointme__Mecha__45F365D3">
             <End Role="Mechanics" EntitySet="Mechanics" />
             <End Role="Appointment" EntitySet="Appointment" />
           </AssociationSet>
-          <AssociationSet Name="FK__Appointme__Servi__403A8C7D" Association="Self.FK__Appointme__Servi__403A8C7D">
+          <AssociationSet Name="FK__Appointme__Servi__49C3F6B7" Association="Self.FK__Appointme__Servi__49C3F6B7">
             <End Role="Services" EntitySet="Services" />
             <End Role="Appointment" EntitySet="Appointment" />
           </AssociationSet>
-          <AssociationSet Name="FK__Appointme__Vehic__3E52440B" Association="Self.FK__Appointme__Vehic__3E52440B">
+          <AssociationSet Name="FK__Appointme__Vehic__44FF419A" Association="Self.FK__Appointme__Vehic__44FF419A">
             <End Role="Vehicles" EntitySet="Vehicles" />
             <End Role="Appointment" EntitySet="Appointment" />
           </AssociationSet>
@@ -239,7 +239,7 @@
           <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ZipCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="HomePhone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="HomePhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Note" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Mechanics" Relationship="Self.FK__Mechanics__Deale__2E1BDC42" FromRole="Dealers" ToRole="Mechanics" />

@@ -10,5 +10,10 @@ namespace SBS.DAL.Interface
     public interface IDealerRepository
     {
         List<Dealer> GetDealersForDropDown();
+        List<Dealer> GetDealers();
+        Dealer GetDealer(int dealerId);
+        bool DeleteDealer(int id);
+        bool EditDealer(Dealer dealer);
+        bool CreateDealer(Dealer dealer);
     }
 }

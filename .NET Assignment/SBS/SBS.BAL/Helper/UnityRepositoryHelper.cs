@@ -19,6 +19,8 @@ namespace SBS.BAL.Helper
             Container.RegisterType<IVehicleRepository, VehicleRepository>();
             Container.RegisterType<IServiceRepository, ServiceRepository>();
             Container.RegisterType<IBookingRepository, BookingRepository>();
+            Container.RegisterType<IMechanicRepository, MechanicRepository>();
+            Container.RegisterType<ICustomerRepository, CustomerRepository>();
         }
     }
 }

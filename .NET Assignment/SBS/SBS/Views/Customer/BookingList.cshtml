@@ -10,8 +10,6 @@
             <div class="card-header">
                 <h3 class="card-title">Booking List</h3>
             </div>
-
-            <!-- /.card-header -->
             <div class="card-body">
                 <div class="table-responsive">
                     <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
@@ -34,6 +32,7 @@
                                     <th>
                                         @Html.DisplayNameFor(model => model.BookingDateTime)
                                     </th>
+                                    <th></th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -62,8 +61,10 @@
                                             @Html.DisplayFor(modelItem => item.BookingDateTime)
                                         </td>
                                         <td>
-                                            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                                            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                            @Html.ActionLink("Edit", "EditBooking", new { id = item.Id },new { @class="btn btn-primary" })
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Delete", "DeleteBooking", new { id = item.Id }, new { @class = "btn btn-danger" })
                                         </td>
                                     </tr>
                                 }

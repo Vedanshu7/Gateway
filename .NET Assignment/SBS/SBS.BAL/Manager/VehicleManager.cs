@@ -35,6 +35,18 @@ namespace SBS.BAL.Manager
             return result;
         }
 
+        public bool DeleteVehicle(int id, int customerId)
+        {
+            return _vehicleRepository.DeleteVehicle(id,customerId);
+        }
+
+        public VehicleViewModel GetVehicle(int id, int customerId)
+        {
+            DAL.Database.Vehicle vehicle = _vehicleRepository.GetVehicle(id, customerId);
+            VehicleViewModel vehiclefromdb = mapper.Map<DAL.Database.Vehicle, VehicleViewModel>(vehicle);
+            return vehiclefromdb;
+        }
+
         public List<VehicleViewModel> GetVehicles(int customerid)
         {
             List<DAL.Database.Vehicle> vehiclesfromdb = _vehicleRepository.GetVehicles(customerid);
@@ -47,6 +59,12 @@ namespace SBS.BAL.Manager
             List<DAL.Database.Vehicle> vehiclesfromdb = _vehicleRepository.GetVehiclesForDropDown(customerid);
             List<MDL.Models.Vehicle> vehicles = mapper.Map<List<DAL.Database.Vehicle>, List<MDL.Models.Vehicle>>(vehiclesfromdb);
             return vehicles;
+        }
+
+        public bool UpdateVehicle(VehicleViewModel vehicle)
+        {
+            DAL.Database.Vehicle vehiclefordb = mapper.Map<VehicleViewModel, DAL.Database.Vehicle>(vehicle);
+            return _vehicleRepository.UpdateVehicle(vehiclefordb);
         }
     }
 }
