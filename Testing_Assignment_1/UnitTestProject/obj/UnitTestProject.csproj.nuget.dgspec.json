@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\vedan\\source\\repos\\Testing_Assignment_1\\UnitTestProject\\UnitTestProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\vedan\\source\\repos\\Testing_Assignment_1\\Testing_Assignment_1\\Testing_Assignment_1.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vedan\\source\\repos\\Testing_Assignment_1\\Testing_Assignment_1\\Testing_Assignment_1.csproj",
+        "projectName": "Testing_Assignment_1",
+        "projectPath": "C:\\Users\\vedan\\source\\repos\\Testing_Assignment_1\\Testing_Assignment_1\\Testing_Assignment_1.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\vedan\\source\\repos\\Testing_Assignment_1\\UnitTestProject\\UnitTestProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vedan\\source\\repos\\Testing_Assignment_1\\UnitTestProject\\UnitTestProject.csproj",
+        "projectName": "UnitTestProject",
+        "projectPath": "C:\\Users\\vedan\\source\\repos\\Testing_Assignment_1\\UnitTestProject\\UnitTestProject.csproj",
+        "packagesPath": "C:\\Users\\vedan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vedan\\source\\repos\\Testing_Assignment_1\\UnitTestProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vedan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\vedan\\source\\repos\\Testing_Assignment_1\\Testing_Assignment_1\\Testing_Assignment_1.csproj": {
+                "projectPath": "C:\\Users\\vedan\\source\\repos\\Testing_Assignment_1\\Testing_Assignment_1\\Testing_Assignment_1.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
